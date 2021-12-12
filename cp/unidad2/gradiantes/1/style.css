@@ -1,0 +1,7 @@
+.myclass {
+    text-align: center;
+    font-size: 5vw;
+    padding: 10vw;
+    border: solid;
+    background:repeating-linear-gradient(#bf8bf3c7 20%, #bbf5ff 40%)
+}

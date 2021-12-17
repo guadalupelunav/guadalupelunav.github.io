@@ -4,13 +4,49 @@
         <title>Turismo de Córdoba</title>
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="./images/icono 2.jpeg">
+        <style>
+            .titulo {
+                font-family: cordoba;
+                font-size: 50px;
+                text-align: center;
+            }
+            @font-face {
+                font-family:cordoba;
+                src: url(Fuentes/Sail.ttf);
+            }
+             ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            li {
+                display: inline-block;
+                border: 1px solid black;
+                padding: 5px;
+                background-color: wheat;
+            }   
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            #animate li a {
+                cursor: pointer;
+                -webkit-transition: padding-left 250ms ease-out;
+                -moz-transition: padding-left 250ms ease-out;
+            }
+            #animate li a:hover {
+                padding-left: 10px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1 id="top">Córdoba Ciudad Patrimonio</h1>
+            <h1 id="top" class="titulo">Córdoba Ciudad Patrimonio</h1>
         </header>
+        <hr>
         <nav>
-            <ul type="a">
+            <ul id="animate" type="a">
                 <li><a href="Index.html">Inicio</a></li>
                 <li><a href="mezquita.html">La Mezquita</a></li>
                 <li><a href="cascohistorico.html">Casco Histórico</a></li>

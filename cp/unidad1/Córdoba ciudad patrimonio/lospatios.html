@@ -45,11 +45,14 @@
             }
             #animate li a {
                 cursor: pointer;
-                -webkit-transition: padding-left 250ms ease-out;
-                -moz-transition: padding-left 250ms ease-out;
+                transition: padding 250ms ease-in-out;
             }
             #animate li a:hover {
                 padding-left: 10px;
+                padding-right: 10px;
+                text-shadow: 0 0 12px white, 0 0 12px white, 0 0 12px white;
+                padding: 10px;
+                transition: all 0.3s ease;
             }
         </style>
     </head>

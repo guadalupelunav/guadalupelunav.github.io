@@ -17,15 +17,35 @@
                 background: linear-gradient(#daf4f8, #e9d7fbc7 ,#ffefdac7, #daf4f8, #e9d7fbc7); 
                 background-color:(#daf4f8, #e9d7fbc7 ,#ffefdac7, #daf4f8, #e9d7fbc7);
             }
-            #animateList li a {
-                cursor: pointer;
-                transition: padding-left 250ms ease-out;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
             }
-            #animateList li a:hover {
+            li {
+                display: inline-block;
+                border: 1px solid white;
+                padding: 10px;
+                background-color: skyblue;
+                margin: 10px;
+                font-size: 20px;
+            }
+            #animate li a {
+                cursor: pointer;
+                transition: padding 250ms ease-in-out;
+            }
+            #animate li a:hover {
                 padding-left: 10px;
+                padding-right: 10px;
+                text-shadow: 0 0 12px white, 0 0 12px white, 0 0 12px white;
+                padding: 10px;
+                transition: all 0.3s ease;
             }
             a {
-                color:#0026ff; 
+                margin: 5px;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
             }
         </style>
     </head>
@@ -33,16 +53,20 @@
         <h1>Bloque 1: Texto</h1>
         <hr>
         <h2>Actividades:</h2>
-        <ul id="animateList" type=circle>
-            <li><h3><a href="bloque1/Ejercicios 4, 5, 7 y 8.odt">Ejercicio </a></h3></li>
-            <li><h3><a href="bloque1/ejercicio6.html">Ejercicio 6</a></h3></li>
-            <li><h3><a href="bloque1/ejercicio9a.html">Ejercicio 9A</a></h3></li>
-            <li><h3><a href="bloque1/ejercicio9b.html">Ejercicio 9B</a></h3></li>
-            <li><h3><a href="bloque1/ejercicio9c.html">Ejercicio 9C</a></h3></li>
-            <li><h3><a href="bloque1/ejercicio9d.html">Ejercicio 9D</a></h3></li>
-            <li><h3><a href="bloque1/ejercicio9e.html">Ejercicio 9E</a></h3></li>
-            <li><h3><a href="bloque1/ejercicio9f.html">Ejercicio 9F</a></h3></li>
-        </ul>
+        <nav>
+            <ul id="animate" type=a>
+                <li><a href="bloque1/Ejercicios 4, 5, 7 y 8.odt">Ejercicio 4, 5, 7 y 8</a></li>
+                <li><a href="bloque1/ejercicio6.html">Ejercicio 6</a></li>
+                <li><a href="bloque1/ejercicio9a.html">Ejercicio 9A</a></li>
+                <li><a href="bloque1/ejercicio9b.html">Ejercicio 9B</a></li>
+            </ul>
+            <ul id="animate" type=a>
+                <li><a href="bloque1/ejercicio9c.html">Ejercicio 9C</a></li>
+                <li><a href="bloque1/ejercicio9d.html">Ejercicio 9D</a></li>
+                <li><a href="bloque1/ejercicio9e.html">Ejercicio 9E</a></li>
+                <li><a href="bloque1/ejercicio9f.html">Ejercicio 9F</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
 

@@ -9,7 +9,7 @@
         <title>Guadalupe Luna Velázquez</title>
         <style>
             body {
-                background-color: #bbf5ff;
+                background-color: white;
             }
             .titulo {
                 padding: 10px;
@@ -18,33 +18,51 @@
                 border-right: 0px;
                 border-bottom: 10px;
                 border-style: groove;
-                border-color:royalblue;
-                color: blue;
-                text-shadow:white 0 0 10px;
+                border-color: #b50404e1;
+                color: red;
+                text-shadow:red 0 0 10px;
             }
             .subtitulo {
                 color: darkblue;
                 padding-left: 10px;
             }
-            #animateList li a {
-                cursor: pointer;
-                transition: padding-left 250ms ease-out;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
             }
-            #animateList li a:hover {
+            li {
+                display: inline-block;
+                border: 1px solid white;
+                padding: 10px;
+                background-color: #ff0000e1;
+                margin: 10px;
+                font-size: 5px;
+                padding: 10px;
+            }
+            #animate li a {
+                cursor: pointer;
+                transition: padding 250ms ease-in-out;
+            }
+            #animate li a:hover {
                 padding-left: 10px;
+                padding-right: 10px;
+                text-shadow: 0 0 12px white, 0 0 12px white, 0 0 12px white;
+                padding: 10px;
+                transition: all 0.3s ease;
             }
             a {
-                color:#0026ff; 
-            }
-            .a:hover {
-                color:#0026ff; 
+                margin: 5px;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
         <h1 class="titulo">Unidad 1</h1>
         <h2 class="subtitulo">Bloques:</h2>
-        <ul id="animateList" type=circle>
+        <ul id="animate" type=circle>
             <li><h3><a href="unidad1/bloque 1.html">Bloque 1: Estructura y contenido</a></h3></li>
             <li><h3><a href="unidad1/bloque 2.html">Bloque 2: Enlaces</a></h3></li>
             <li><h3><a href="unidad1/bloque 3.html">Bloque 3: Imágenes</a></h3></li>
@@ -56,5 +74,8 @@
             <li><h3><a href="unidad1/Las recetas de la abuela/Lasrecetasdelaabuela.html">Las Recetas de la abuela</a></h3></li>
             
         </ul>
+        <footer>
+            <img src="">
+        </footer>
     </body>
 </html>

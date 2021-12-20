@@ -32,15 +32,37 @@
                 text-shadow:white 0 0 10px;
                 font-family: jamesstroker;
             }
-            #animateList li a {
-                cursor: pointer;
-                transition: padding-left 250ms ease-out;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
             }
-            #animateList li a:hover {
+            li {
+                display: inline-block;
+                border: 1px solid white;
+                padding: 10px;
+                background-color: royalblue;
+                margin: 10px;
+                font-size: 5px;
+                padding: 10px;
+            }
+            #animate li a {
+                cursor: pointer;
+                transition: padding 250ms ease-in-out;
+            }
+            #animate li a:hover {
                 padding-left: 10px;
+                padding-right: 10px;
+                text-shadow: 0 0 12px white, 0 0 12px white, 0 0 12px white;
+                padding: 10px;
+                transition: all 0.3s ease;
             }
             a {
-                color:#0026ff; 
+                margin: 5px;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
             }
             @font-face {
                 font-family:jamesstroker;
@@ -51,7 +73,7 @@
     <body>
         <img class="imagen" class="golw" src="./images/Pajarita2.png" height="50px" width="40px" align="left">
         <h1 class="titulo" class="letra1">Guadalupe Luna Velazquez</h1>
-        <ul id="animateList" type="circle">
+        <ul id="animate" type="circle">
             <li><h3><a href="./cp/unidad 1.html">Unidad 1: HTML</a></h3></li>
             <li><h3><a href="./cp/unidad 2.html">Unidad 2: CSS</a></h3></li>
             <li><h3><a href="./cp/unidad1/Córdoba ciudad patrimonio/index.html">Córdoba Ciudad Patrimonio</a></h3></li>

@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="./images/icono 2.jpeg">
         <style>
             html {
-                height: 100%;
+                height: 110%
             }
             body {
                 background: -webkit-linear-gradient(#bbf5ff, #bf8bf3c7); 
@@ -18,19 +18,27 @@
                 background-color:(#bbf5ff, #bf8bf3c7); 
             }
             .imagen {
-                margin-right: 10px;
+                margin: 10px;
+                width: 50px;
             }
             .titulo {
                 padding: 10px;
-                border-top: 0px;
-                border-left: 0px;
-                border-right: 0px;
-                border-bottom: 10px;
-                border-style: groove;
-                border-color:royalblue;
-                color: blue;
-                text-shadow:white 0 0 10px;
+                border-style:solid;
+                border-width: 5px;
+                background-color: royalblue;
+                border-color: white;
+                color: white;
+                text-shadow:blue 0 0 10px;
+                font-family: digital;
+                font-size: 35px;
+            }  
+                
+            .titulo2 {  
                 font-family: jamesstroker;
+                color: blue;
+                text-align: center;
+                text-decoration: underline ;
+                font-size: 35px;
             }
             ul {
                 list-style-type: none;
@@ -68,16 +76,37 @@
                 font-family:jamesstroker;
                 src: url(Fuentes/James\ Stroker.ttf)
             }
+            @font-face {
+                font-family:digital;
+                src: url(Fuentes/Blockstepped.ttf)
+            }
+            footer {
+                text-align: center;
+                background-color: royalblue;
+                color: white;
+            }
+            form {
+                text-align: right;
+            }
             </style>
     </head>
     <body>
-        <img class="imagen" class="golw" src="./images/Pajarita2.png" height="50px" width="40px" align="left">
-        <h1 class="titulo" class="letra1">Guadalupe Luna Velazquez</h1>
+        <img class="imagen" class="golw" src="./images/iconopng.png" height="50px" width="40px" align="left">
+        <p class="titulo" class="letra1">Lenguaje de marcas</p>
+        <form action="http://www.google.com/search" method="get" target="_blank"><p><input type="text" name="q" size=30 maxlength="100" value="Buscar en Google"> <input type="submit" name="btnG" value="Buscar"><span style=font-size:-1;> </table></form>
+        <p class="titulo2">Guadalupe Luna Velazquez</p>
+        <br><br>
         <ul id="animate" type="circle">
             <li><h3><a href="./cp/unidad 1.html">Unidad 1: HTML</a></h3></li>
             <li><h3><a href="./cp/unidad 2.html">Unidad 2: CSS</a></h3></li>
             <li><h3><a href="./cp/unidad1/Córdoba ciudad patrimonio/index.html">Córdoba Ciudad Patrimonio</a></h3></li>
             <li><h3><a href="./cp/unidad1/Las recetas de la abuela/Lasrecetasdelaabuela.html">Las recetas de la abuela</a></h3></li>
         </ul>
+        
+        <div style="text-align:center;padding:1em 0;"><br/>Córdoba, España</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FMadrid" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+        <footer>
+            <h6><br>Lenguaje de marcas I.E.S. Gran Capitán <br> ©: Guadalupe Luna Velázquez, Todos los derechos reservados </br> Córdoba, España. 2021</h6>
+            </br>
+        </footer>
     </body>
 </html>

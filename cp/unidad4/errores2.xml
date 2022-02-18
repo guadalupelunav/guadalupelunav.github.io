@@ -1,0 +1,12 @@
+<errores>
+    <fichero nombre="ejer6.xml">
+        <error>
+            <linea>14</linea>
+            <descripcion>Falta el DOCTYPE al principio del fichero</descripcion>
+        </error>
+        <error>
+            <linea>16</linea>
+            <descripcion>Falta elemento CIUDAD</descripcion>
+        </error>
+    </fichero>
+</errores>

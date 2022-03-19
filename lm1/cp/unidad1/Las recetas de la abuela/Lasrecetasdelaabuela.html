@@ -1,0 +1,254 @@
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <title>Las recetas de la abuela</title>
+        <link rel="shortcut icon" href="./images/icono 2.jpeg">
+        <style>
+            body {
+                display: grid;
+                grid-template-areas: "header header header"
+                                    "article article aside"
+                                    "article article aside"
+                                    "article article aside"
+                                    "footer footer footer";
+                grid-template-rows: 10vw 37vw;
+                grid-template-columns: 80vw 5fr 20vw;
+                grid-gap: 0.5vw;
+                height: 100%;
+                margin: 0;
+            }
+            header {
+            background-color: lightsalmon
+            }
+            article {
+                background-color: papayawhip;
+                padding-left: 5vw;
+                padding-right: 2vw;
+                padding-bottom: 2vw;
+            }
+            aside {
+                background-color: lightsalmon;
+                text-align: center;
+            }
+            footer {
+                background-color: lightsalmon;
+                text-align: center;
+                font-size: 1.5vw;
+            }
+            #header {
+                grid-area: header;
+            }
+            #article {
+                grid-area: article;
+            }
+            #aside {
+                grid-area: aside;
+            }
+            #footer {
+                grid-area: footer;
+                font-family: abuela;
+            }
+            .formaleft {
+                shape-image-threshold: 0.5;
+                margin-left: 20px;
+                float: left;
+                height: 8vw;
+            }
+            h1 {
+                text-align: center;
+                font-family: abuela;
+                font-size: 3vw;
+            }
+            h2{
+                font-family: abuela;
+                text-align: center;
+                font-size: 2vw;
+            }
+            h4 {
+                font-family: abuela;
+                text-align: center;
+                font-size: 1.5vw;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+            * {box-sizing: border-box;}
+            ul {list-style-type: none;}
+            body {font-family: Verdana, sans-serif;}
+            .month {
+                padding: 10px 25px;
+                width: 100%;
+                background: lightsalmon;
+                text-align: center;
+            }
+            .month ul {
+                margin: 0;
+                padding: 0;
+            }
+            .month ul li {
+                color: white;
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+            .weekdays {
+                width: 100%;
+                margin: 0;
+                padding: 10px 0;
+                background-color: #ddd;
+            }
+            .weekdays li {
+                display: inline-block;
+                width: 11%;
+                color: #666;
+            }
+            .days {
+                width: 100%;
+                padding: 10px 0;
+                background: #eee;
+                margin: 0;
+            }
+            .days li {
+                list-style-type: none;
+                display: inline-block;
+                width: 11%;
+                margin-bottom: 30px;
+                font-size:12px;
+                color: #777;
+            }
+            .days li .active {
+                padding: 5px;
+                background: lightsalmon;
+                color: white !important
+            }
+            a {
+                cursor: pointer;
+                transition: padding 250ms ease-in-out;
+            }
+            a:hover {
+                padding: 0.5vw;
+                transition: all 0.3s ease;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            a {
+                display: inline-block;
+                border: 1px solid black;
+                padding: 0.25vw;
+                background-color: lightsalmon;
+                color: white;
+                text-decoration: none;
+                font-family: abuela;
+            }   
+            @font-face {
+                font-family:abuela;
+                src: url(fuentes/Courgette-Regular.ttf);
+            }
+            .enlace {
+                background-color: white;
+                color: lightsalmon;
+            }
+            @media (max-width: 768px) {
+                img {
+                    height: 15vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img class="formaleft" src="images/abuela.com" alt="icono" height="80">
+            <h1>🍲"Las recetas de la abuela"🍲</h1>
+            
+        </header>
+        <article id="article">
+            <h2>Tarta de queso</h2>
+            
+            <center><img src="images/tartadequeso.jpg" height="200vw" alt="Tarta de queso" title="Tarta de queso"></center>
+            <p><a class="animate" href="tartadequeso.html">Receta de la tarta de queso</a></p>
+            <hr>
+            <h2>Rosquillas tradicionales</h2>
+            <center><img src="images/rosquillas1.JPG" height="200vw" alt="Rosquillas" title="Rosquillas"></center>
+            <p><a class="animate" href="rosquillas.html">Receta de rosquillas</a></p>
+            <hr>
+            <h2>Tarta de chocolate</h2>
+            <center><img class="pincipal" src="images/tarta.jpg" height="200vw" alt="Tarta de chocolate" title="Tarta de chocolate"></center>
+            <p><a class="animate" href="tartachocolate.html">Receta de tarta de chocolate</a></p>
+            <hr>
+            <h2>Flan</h2>
+            <center><img class="pincipal" src="images/flan.jpg" height="200vw" alt="Flan" title="Flan"></center>
+            <p><a class="animate" href="flan.html">Receta de flan</a></p>
+        </article>
+        <aside id="aside">
+            <div class="month">      
+                <ul>
+                  <li>
+                    Marzo<br>
+                    <span style="font-size:18px">2022</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <ul class="weekdays">
+                <li>L</li>
+                <li>M</li>
+                <li>X</li>
+                <li>J</li>
+                <li>V</li>
+                <li>S</li>
+                <li>D</li>
+              </ul>
+              
+              <ul class="days" >  
+                <li></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+                <li><span style="color:#ccc;">1</li></span>
+                <li><span style="color:#ccc;">2</li></span>
+                <li><span style="color:#ccc;">3</li></span>
+              </ul>
+              <hr>
+              <h4>Enlaces de interés</h4>
+              <p><a class="enlace" href="https://es.wikipedia.org/wiki/Gastronom%C3%ADa_de_Espa%C3%B1a">Gastronomía de España</a></p>
+              <p><a class="enlace" href="https://es.wikipedia.org/wiki/Gastronom%C3%ADa_de_Andaluc%C3%ADa">Gastronomía de Andalucía</a></p>
+              <p><a class="enlace" href="https://es.wikipedia.org/wiki/Gastronom%C3%ADa_de_la_provincia_de_C%C3%B3rdoba_(Espa%C3%B1a)">Gastronomía de Córdoba</a></p>
+              <p><a class="enlace" href="https://es.wikipedia.org/wiki/Libro_de_cocina">Recetario</a></p>
+              <p><a class="enlace" href="https://es.wikipedia.org/wiki/Arte_culinario">El arte culinario</a></p>
+        </aside>
+            
+        <footer id="footer"><h5>Lenguaje de marcas I.E.S. Gran Capitán <br> Guadalupe Luna Velázquez | Blanca Cobos Marfil</br> Córdoba, España. 2022</h5></div>
+    </body>
+</html>

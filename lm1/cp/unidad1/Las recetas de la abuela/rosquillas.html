@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <title>Las Recetas de la abuela</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="./images/icono 2.jpeg">
+        <style>
+            body {
+            display: grid;
+            grid-template-areas: "header header header"
+                                 "article article aside"
+                                 "article article aside"
+                                 "article article aside"
+                                 "footer footer footer";
+            grid-template-rows: 10vw 37vw;
+            grid-template-columns: 80vw 5fr 20vw;
+            grid-gap: 0.5vw;
+            height: 100%;
+            margin: 0;
+            }
+            header {
+            background-color: lightsalmon
+            }
+            article {
+                background-color: papayawhip;
+                padding-left: 5vw;
+                padding-right: 2vw;
+                padding-bottom: 2vw;
+            }
+            aside {
+                background-color: lightsalmon;
+                text-align: center;
+            }
+            footer {
+                background-color: lightsalmon;
+                text-align: center;
+                font-size: 1.5vw;
+            }
+            #header {
+                grid-area: header;
+            }
+            #article {
+                grid-area: article;
+            }
+            #aside {
+                grid-area: aside;
+            }
+            #footer {
+                grid-area: footer;
+                font-family: abuela;
+            }
+            .formaleft {
+                shape-image-threshold: 0.5;
+                margin-left: 20px;
+                float: left;
+                height: 8vw;
+            }
+            h1 {
+                text-align: center;
+                font-family: abuela;
+                font-size: 3vw;
+            }
+            h2{
+                font-family: abuela;
+                text-align: center;
+                font-size: 2vw;
+            }
+            h3 {
+                font-family: abuela;
+                font-size: 2vw;
+            }
+            h4 {
+                font-family: abuela;
+                text-align: center;
+                font-size: 1.5vw;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+            li {
+                font-size: 1.5vw;
+            }
+            a {
+                cursor: pointer;
+                transition: padding 250ms ease-in-out;
+                text-align: center;
+            }
+            a:hover {
+                padding: 0.5vw;
+                transition: all 0.3s ease;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                display: inline-block;
+                border: 1px solid black;
+                padding: 0.25vw;
+                background-color: lightsalmon;
+                color: white;
+                text-decoration: none;
+                font-family: abuela;
+            }  
+            @font-face {
+                font-family:abuela;
+                src: url(fuentes/Courgette-Regular.ttf);
+            }
+            @media (max-width: 768px) {
+                img.principal {
+                    height: 25vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img class="formaleft" src="images/abuela.com" alt="icono" height="80">
+            <h1>🍲"Las recetas de la abuela"🍲</h1>
+        </header>
+        <article id="article">
+            <p><a href="Lasrecetasdelaabuela.html">Volver a las recetas de la abuela</a></p>
+            <h2>Rosquillas Tradicionales</h2>
+            <center><img class="principal" src="images/rosquillas1.JPG" alt="Rosquillas caseras" height="300" title="Rosquillas caseras"></center>
+            <h3>Ingredientes:</h3>
+            <ul type="square">
+                <li>Harina de trigo 230 g</li>
+                <li>Azúcar 45 g</li>
+                <li>Levadura química 5 g</li>
+                <li>Leche 30 g</li>
+                <li>Anís dulce 15 ml</li>
+                <li>Huevos 30 g</li>
+                <li>Mantequilla 45 g</li>
+                <li>Aceite de girasol para freír</li>
+                <li>Azúcar para rebozar</li>
+            </ul>
+            <h3>Pasos:</h3>
+            <p>Mezclamos la harina con el azúcar y la levadura químoca. Colocamos la mezcla sobre una superficie de trabajo limpia y hacemos un hueco en el centro, a modo de volcán. En el hueco ponemos la leche, el anís dulce, el huevo (previamente batido) y la mantequilla.</p>
+            <p>Trabajamos los ingredientes líquidos con las yemas de los dedos, haciendo movimientos circulares y procurando integrar la harina poco a poco. Podemos ir integrando harina a los ingredientes líquidos con la otra mano, poco a poco, para que la masa vaya tomando cuerpo lentamente. Cuando todos los ingredientes estén integrados, amasamos durante un par de minutos para homogeneizar bien.</p>
+            <p>La cantidad de harina es orientativa y puede que, según la temperatura, la humedad del ambiente o la marca con la que trabajéis, la masa requiera de un poco más porque nos quede en exceso pegajosa. Si este es el caso, añadimos un poco de harina y amasamos bien para comprobar su punto antes de añadir más.</p>
+            <p>Cuando este lista la masa la envolvemos en papel film transparente y dejamos reposar en la nevera durante 30 minutos. Con el reposo, la masa tomará cuerpo y perderá "pegajosidad" así que es importante no pasarse con la harina.</p>
+            <p>Transcurrido el tiempo de reposo, tomamos porciones de la masa, estiramos en forma de cordón y Unimos los extremos, presionando para que no se abran al freír. Calentamos abundante aceite en un cacito o sartén y, a fuego medio, freímos las rosquillas. Volteamos cuando la parte inferior esté dorada. Retiramos y dejamos escurrir sobre papel absorbente. Rebozamos en azúcar y servimos.</p>
+        </article>
+        <aside id="aside">
+            <div style="text-align:center;padding:1em 0;"><br/>Córdoba, España</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FMadrid" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+            <hr>
+            <h4>Consejos:</h4>
+            <p>- Utilizar el aceite muy caliente</p>
+            <br>
+            <p>- El punto de la masa debe de ser pegajoso, pero manejable.</p>
+        </aside>
+        <footer id="footer"><h5>Lenguaje de marcas I.E.S. Gran Capitán <br> Guadalupe Luna Velázquez | Blanca Cobos Marfil</br> Córdoba, España. 2022</h5></div>
+    </body>
+</html>

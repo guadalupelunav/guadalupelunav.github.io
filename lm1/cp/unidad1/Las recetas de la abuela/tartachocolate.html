@@ -1,53 +1,160 @@
 <!DOCTYPE html>
 <html lang="ES">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../cp/images/indicepaginas.png">
-    <title>Tarta de Chocolate</title>
-    <style>
-      html {
-        min-height: 100%;
-      }
+    <title>Las Recetas de la abuela</title>
+    <style> 
       body {
-        background: -webkit-linear-gradient(to bottom, #a8ff78, #78ffd6);
-        background: -o-linear-gradient(to bottom, #a8ff78, #78ffd6);
-        background: -moz-linear-gradient(to bottom, #a8ff78, #78ffd6);
-        background:linear-gradient(to bottom, #a8ff78, #78ffd6);
-        background-color: (to bottom, #a8ff78, #78ffd6);
+        display: grid;
+        grid-template-areas: "header header header"
+                              "article article aside"
+                              "article article aside"
+                              "article article aside"
+                              "footer footer footer";
+        grid-template-rows: 10vw 37vw;
+        grid-template-columns: 80vw 5fr 20vw;
+        grid-gap: 0.5vw;
+        height: 100%;
+        margin: 0;
+      }
+      header {
+        background-color: lightsalmon
+      }
+      article {
+        background-color: papayawhip;
+        padding-left: 5vw;
+        padding-right: 2vw;
+        padding-bottom: 2vw;
+      }
+      aside {
+        background-color: lightsalmon;
+        text-align: center;
+      }
+      footer {
+        background-color: lightsalmon;
+        text-align: center;
+        font-size: 1.5vw;
+      }
+      #header {
+        grid-area: header;
+      }
+      #article {
+        grid-area: article;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #footer {
+        grid-area: footer;
+        font-family: abuela;
+      }
+      .formaleft {
+        shape-image-threshold: 0.5;
+        margin-left: 20px;
+        float: left;
+        height: 8vw;
+      }
+      h1 {
+        text-align: center;
+        font-family: abuela;
+        font-size: 3vw;
+      }
+      h2{
+        font-family: abuela;
+        text-align: center;
+        font-size: 2vw;
+      }
+      h3 {
+        font-family: abuela;
+        font-size: 2vw;
+      }
+      h4 {
+        font-family: abuela;
+        text-align: center;
+        font-size: 1.5vw;
+      }
+      p {
+        font-size: 1.5vw;
+      }
+      li {
+        font-size: 1.5vw;
+      }
+      a {
+        cursor: pointer;
+        transition: padding 250ms ease-in-out;
+        text-align: center;
+      }
+      a:hover {
+        padding: 0.5vw;
+        transition: all 0.3s ease;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 0.25vw;
+        background-color: lightsalmon;
+        color: white;
+        text-decoration: none;
+        font-family: abuela;
+      }  
+      @font-face {
+        font-family:abuela;
+        src: url(fuentes/Courgette-Regular.ttf);
+      }
+      @media (max-width: 768px) {
+        img.principal {
+        height: 25vw;
+        }
       }
     </style>
-</head>
-<body>
-  <font face= "Calibri">
-    <h1 id="top"></h1>
-    <center><h1>Recetas de la abuela</h1></center><hr>
-    <center><p><u><h2>Tarta de chocolate</h2></u></p></center>
-    <center><img src="imagenes/tarta.jpg" alt="Tarta de chocolate" height="325"></center>
-        <h1><u>Ingredientes</u></h1>
-        <p>Galletas tipo Digestive ....................... 200 g</p>
-        <p>Mantequilla a temperatura ambiente ............ 100 g</p>   
-        <p>Chocolate negro para postres .................. 250 g</p> 
-        <p>Leche entera .................................... 1 L</p> 
-        <p>Cuajada en polvo sobres ..........................2</p>
-        <p>Azúcar ......................................... 50 g</p>
-        <p>Chocolate blanco para decorar ................. 100 g</p>
-        <p><h2><u>Pasos</u></h2></p>
-        <p>Trituramos las galletas dentro de una bolsa de plástico bien cerrada y pasando por encima un rodillo. Agregamos la mantequilla a temperatura 
-            ambiente o, incluso mejor, ligeramente fundida. Mezclamos bien para obtener una masa homogénea. Cubrimos la base y laterales de un molde 
-            desmoldable de 25 cm, aplastando bien para compactar, y guardamos en la nevera o congelador para que endurezca.
-            Mientras tanto preparamos el relleno. Picamos el chocolate y lo calentamos en un cazo junto con la leche, los dos sobres de 
-            cuajada y el azúcar durante 10 minutos. Removemos bien para que no queden grumos. Vertemos sobre la base de galletas y dejamos 
-            cuajar en la nevera durante cuatro horas aproximadamente. 
-            Con un pelador hacemos virutas de chocolate blanco y decoramos la tarta en el momento de servir.</p>
-        <u><p><h2>Sugerencias de Presentación</h2></p></u>
-        <p>Como todo lo que lleva chocolate, a esta tarta de chocolate fácil y rápida le sienta de maravilla un café recién hecho que contraste 
-            con su dulzor, pero no es lo único de lo que la podemos acompañar. Un vaso de leche, en el caso de los más pequeños, una 
-            infusión, una copa de licor son otras opciones que nos vienen a la cabeza.</p>
-
-            <center><a href="#top"><img src="./imagenes/inicio.png" height="100"></a></center>
-            <p><a href="../recetas.html">Atrás</a></p>
-  </font>
-</body>
+  </head>
+  <body>
+    <header id="header">
+      <img class="formaleft" src="images/abuela.png" alt="icono" height="80">
+      <h1>🍲"Las recetas de la abuela"🍲</h1>
+    </header>
+    <article id="article">
+      <p><a href="Lasrecetasdelaabuela.html">Volver a las recetas de la abuela</a></p>
+      <h2>Tarta de chocolate</h2>
+      <center><img class="principal" src="images/tarta.jpg" alt="Tarta de chocolate" height="325"></center>
+          <h3>Ingredientes:</h3>
+          <ul type="square">
+            <li>200 g de galletas tipo Digestive</li>
+            <li>100 g de mantequilla a temperatura ambiente</li>   
+            <li>250 g de chocolate negro para postres</li> 
+            <li>1l de leche entera</li> 
+            <li>2 sobres de cuajada en polvo sobres</li>
+            <li>50 g de azúcar</li>
+            <li>100 g de chocolate blanco para decorar</li>
+          </ul>
+          <br>
+          <h3><strong>Pasos:</strong></h3>
+          <ol>
+            <li>Trituramos las galletas dentro de una bolsa de plástico bien cerrada y pasando por encima un rodillo.</li>
+            <li>Agregamos la mantequilla a temperatura ambiente o, incluso mejor, ligeramente fundida.</li>
+            <li>Mezclamos bien para obtener una masa homogénea.</li>
+            <li>Cubrimos la base y laterales de un molde desmoldable de 25 cm, aplastando bien para compactar, y guardamos en la nevera o congelador para que endurezca.</li>
+            <li>Mientras tanto preparamos el relleno. Picamos el chocolate y lo calentamos en un cazo junto con la leche, los dos sobres de cuajada y el azúcar durante 10 minutos.</li>
+            <li>Removemos bien para que no queden grumos. Vertemos sobre la base de galletas y dejamos cuajar en la nevera durante cuatro horas aproximadamente. </li>
+            <li>Con un pelador hacemos virutas de chocolate blanco y decoramos la tarta en el momento de servir.</li>
+          </ol>
+          
+    </article>
+    <aside id="aside">
+      <div style="text-align:center;padding:1em 0;"><br/>Córdoba, España</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FMadrid" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+      <hr>
+      <h4>Consejos:</h4>
+      <p>- Puede acompañarse de un café, leche, un té o incluso una copa de licor.</p>
+      <br>
+      <p>- Añadir un poco de sirope del sabor que prefieras.</p>
+  </aside>
+  <footer id="footer"><h5>Lenguaje de marcas I.E.S. Gran Capitán <br> Guadalupe Luna Velázquez | Blanca Cobos Marfil</br> Córdoba, España. 2022</h5></div>
+  </body>
 </html>

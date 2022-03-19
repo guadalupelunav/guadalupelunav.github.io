@@ -1,66 +1,174 @@
 <!DOCTYPE html>
 <html lang="ES">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../cp/images/indicepaginas.png">
-    <title>Flan de Huevo</title>
-    <style>
-        html {
-          min-height: 100%;
-        }
-        body {
-          background: -webkit-linear-gradient(to bottom, #a8ff78, #78ffd6);
-          background: -o-linear-gradient(to bottom, #a8ff78, #78ffd6);
-          background: -moz-linear-gradient(to bottom, #a8ff78, #78ffd6);
-          background:linear-gradient(to bottom, #a8ff78, #78ffd6);
-          background-color: (to bottom, #a8ff78, #78ffd6);
-        }
-      </style>
-</head>
-<body>
-    <font face= "Calibri">
-    <h1 id="top"></h1>
-    <center><h1>Recetas de la abuela</h1></center><hr>
-    <center><p><u><h2>Flan de huevo</h2></u></p></center>
-    <center><img src="imagenes/flan.jpg" alt="Flan de Huevo" height="325"></center>
-        <h1><u>Ingredientes</u></h1>
-        <p>4 huevos del tamaño L </p> 
-        <p>500 ml de leche (2 tazas y media)</p>
-        <p>100 g de azúcar ( 5 cucharadas o media taza)</p>
-        <p><h3><u>Para el caramelo</u></h3></p> 
-        <p>4 cucharadas de azúcar (1/3 de taza)</p> 
-        <p>3 cucharadas de agua</p>  
-        <p><h2><u>Pasos</u></h2></p>
-        <p>1.- Preparación del caramelo. Coloca en un cazo el azúcar para el caramelo y añade 2 o 3 cucharadas de agua. 
-            Enciende el fuego y deja hasta que se dore. No hay que hacerle nada, solo esperar a que coja un bonito color dorado. 
-            Cuando el caramelo alcance el color dorado que desees, viértelo en el molde donde vas a preparar el flan. Reserva.
+    <head>
+        <title>Las Recetas de la abuela</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                display: grid;
+                grid-template-areas: "header header header"
+                                    "article article aside"
+                                    "article article aside"
+                                    "article article aside"
+                                    "footer footer footer";
+                grid-template-rows: 10vw 37vw;
+                grid-template-columns: 80vw 5fr 20vw;
+                grid-gap: 0.5vw;
+                height: 100%;
+                margin: 0;
+                }
+                header {
+                background-color: lightsalmon
+                }
+                article {
+                    background-color: papayawhip;
+                    padding-left: 5vw;
+                    padding-right: 2vw;
+                    padding-bottom: 2vw;
+                }
+                aside {
+                    background-color: lightsalmon;
+                    text-align: center;
+                }
+                footer {
+                    background-color: lightsalmon;
+                    text-align: center;
+                    font-size: 1.5vw;
+                }
+                #header {
+                    grid-area: header;
+                }
+                #article {
+                    grid-area: article;
+                }
+                #aside {
+                    grid-area: aside;
+                }
+                #footer {
+                    grid-area: footer;
+                    font-family: abuela;
+                }
+                .formaleft {
+                    shape-image-threshold: 0.5;
+                    margin-left: 20px;
+                    float: left;
+                    height: 8vw;
+                }
+                h1 {
+                    text-align: center;
+                    font-family: abuela;
+                    font-size: 3vw;
+                }
+                h2{
+                    font-family: abuela;
+                    text-align: center;
+                    font-size: 2vw;
+                }
+                h3 {
+                    font-family: abuela;
+                    font-size: 2vw;
+                }
+                h4 {
+                    font-family: abuela;
+                    text-align: center;
+                    font-size: 1.5vw;
+                }
+                p {
+                    font-size: 1.5vw;
+                }
+                li {
+                    font-size: 1.5vw;
+                }
+                a {
+                    cursor: pointer;
+                    transition: padding 250ms ease-in-out;
+                    text-align: center;
+                }
+                a:hover {
+                    padding: 0.5vw;
+                    transition: all 0.3s ease;
+                }
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                a {
+                    display: inline-block;
+                    border: 1px solid black;
+                    padding: 0.25vw;
+                    background-color: lightsalmon;
+                    color: white;
+                    text-decoration: none;
+                    font-family: abuela;
+                }  
+                @font-face {
+                    font-family:abuela;
+                    src: url(fuentes/Courgette-Regular.ttf);
+                }
+                @media (max-width: 768px) {
+                    img.principal {
+                        height: 25vw;
+                    }
+                }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img class="formaleft" src="images/abuela.png" alt="icono" height="80">
+            <h1>🍲"Las recetas de la abuela"🍲</h1>
+        </header>
+        <article id="article">
+            <p><a href="Lasrecetasdelaabuela.html">Volver a las recetas de la abuela</a></p>
+            <h2>Flan de huevo</h2>
+            <center><img class="principal" src="images/flan.jpg" alt="Flan de Huevo" height="325"></center>
+            <h3>Ingredientes:</h3>
+            <ul type="square">
+                <li>4 huevos del tamaño L </li> 
+                <li>500 ml de leche (2 tazas y media)</li>
+                <li>100 g de azúcar ( 5 cucharadas o media taza)</li>
+                <p><strong>Para el caramelo:</strong></p> 
+                <li>4 cucharadas de azúcar (1/3 de taza)</li> 
+                <li>3 cucharadas de agua</li>  
+            </ul>
+            <br>
+            <h3><strong>Pasos:</strong></h3>
+            <ol>
+                <li>Preparación del caramelo. Coloca en un cazo el azúcar para el caramelo y añade 2 o 3 cucharadas de agua. 
+                    Enciende el fuego y deja hasta que se dore. No hay que hacerle nada, solo esperar a que coja un bonito color dorado. 
+                    Cuando el caramelo alcance el color dorado que desees, viértelo en el molde donde vas a preparar el flan. Reserva.
 
-        <p> 2.-Preparacion del flan. En un bol, coloca los huevos y el azúcar y bate. Añade la leche y bate de nuevo. 
-            Vierte la mezcla en el molde caramelizado. Tápalo con papel de aluminio, con un platito de postre o con la tapa del molde. 
-            El molde que yo he usado, lo encontrarás fácilmente en ferreterías o tiendas de menaje.</p>
+                <li>Preparacion del flan. En un bol, coloca los huevos y el azúcar y bate. Añade la leche y bate de nuevo. 
+                    Vierte la mezcla en el molde caramelizado. Tápalo con papel de aluminio, con un platito de postre o con la tapa del molde. 
+                    El molde que yo he usado, lo encontrarás fácilmente en ferreterías o tiendas de menaje.</p>
 
-        <p>3.- Preparacion al baño María en olla a presión. Vierte unos 3 centímetros de agua y coloca el flan tapado. 
-            Tapa la olla y llévalo al fuego. Cocínalo durante 5 minutos desde el momento en que el testigo de la olla se levante. 
-            Pasados estos 5 minutos, retira la olla del fuego y deja que pierda presión. Después de media hora, con mucho cuidado, 
-            retira el flan. Deja enfriar el flan de huevo a temperatura ambiente y luego, guárdalo en el frigorífico durante, por lo menos, 
-            5 horas.</p>
-        <p>4.- Si vas a hacer el flan de huevo al horno, coloca el recipiente con el flan dentro de un recipiente de cristal apto para horno y
-            cubre con agua hasta la mitad del molde exterior. Introduce en el horno a temperatura entre 175- 190ºC durante, aproximadamente, 
-            1 hora a hora y cuarto, con calor arriba y abajo y con el flan tapado (con tapa o papel de aluminio).</p>   
-        <p>5.- Para cocinar el flan de huevo en una olla convencional al baño María, coloca un poco de agua, hasta llegar a 3 o 4 
-            centímetros del flan y taa la olla. El tiempo de cocción será de una hora. Es muy importante que el agua no llegue a hervir y 
-            por eso deberás cocinarlo a fuego bajo. El agua hervirá, pero debe hacerlo sin borbotones.</p>   
-        <p>6.- Si vas a cocinarlo al microondas, puedes usar un molde de silicona o uno de pyrex o cristal. Introduce el molde sin tapar a 
-            potencia media, de 450 a 500 w de 10 a 15 minutos. Comprueba que se ha cocinado viendo si se ha cuajado.</p>
-        <p>7.- Para desmoldarlo, pasa un cuchillo por todo el borde , mueve un poco suavemente para conseguir que se despegue, y con la 
-            ayuda de un plato, vuélcalo.</p>
-        
-        <u><p><h2>Sugerencias de Presentación</h2></p></u>
-        <p>Añadir un poco de sirope del sabor que prefieras.</p>
-            <center><a href="#top"><img src="./imagenes/inicio.png" height="100"></a></center>
-            <p><a href="../recetas.html">Atrás</a></p>
-        </font>
-</body>
+                <li>Preparacion al baño María en olla a presión. Vierte unos 3 centímetros de agua y coloca el flan tapado. 
+                    Tapa la olla y llévalo al fuego. Cocínalo durante 5 minutos desde el momento en que el testigo de la olla se levante. 
+                    Pasados estos 5 minutos, retira la olla del fuego y deja que pierda presión. Después de media hora, con mucho cuidado, 
+                    retira el flan. Deja enfriar el flan de huevo a temperatura ambiente y luego, guárdalo en el frigorífico durante, por lo menos, 
+                    5 horas.</p>
+                <li>Si vas a hacer el flan de huevo al horno, coloca el recipiente con el flan dentro de un recipiente de cristal apto para horno y
+                    cubre con agua hasta la mitad del molde exterior. Introduce en el horno a temperatura entre 175- 190ºC durante, aproximadamente, 
+                    1 hora a hora y cuarto, con calor arriba y abajo y con el flan tapado (con tapa o papel de aluminio).</p>   
+                <li>Para cocinar el flan de huevo en una olla convencional al baño María, coloca un poco de agua, hasta llegar a 3 o 4 
+                    centímetros del flan y taa la olla. El tiempo de cocción será de una hora. Es muy importante que el agua no llegue a hervir y 
+                    por eso deberás cocinarlo a fuego bajo. El agua hervirá, pero debe hacerlo sin borbotones.</p>   
+                <li>Si vas a cocinarlo al microondas, puedes usar un molde de silicona o uno de pyrex o cristal. Introduce el molde sin tapar a 
+                    potencia media, de 450 a 500 w de 10 a 15 minutos. Comprueba que se ha cocinado viendo si se ha cuajado.</p>
+                <li>Para desmoldarlo, pasa un cuchillo por todo el borde , mueve un poco suavemente para conseguir que se despegue, y con la 
+                    ayuda de un plato, vuélcalo.</p>
+            </ol>
+        </article>
+        <aside id="aside">
+            <div style="text-align:center;padding:1em 0;"><br/>Córdoba, España</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FMadrid" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+            <hr>
+            <h4>Consejos:</h4>
+            <p>- Para montar la nata utilizar los ingredientes fríos.</p>
+            <br>
+            <p>- Añadir un poco de sirope del sabor que prefieras.</p>
+        </aside>
+        <footer id="footer"><h5>Lenguaje de marcas I.E.S. Gran Capitán <br> Guadalupe Luna Velázquez | Blanca Cobos Marfil</br> Córdoba, España. 2022</h5></div>
+    </body>
 </html>

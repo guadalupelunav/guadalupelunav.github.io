@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas [
+    <!ELEMENT personas (persona+)>
+    <!ELEMENT persona EMPTY>
+    <!ATTLIST persona nombre CDATA #REQUIRED>
+    <!ATTLIST persona edad CDATA #REQUIRED>
+    <!ATTLIST persona pais CDATA #REQUIRED>
+]>
+
+<personas>
+   <persona nombre="Eva" edad="25" pais="Francia"/>
+   <persona nombre="Giovanni" edad="26" pais="Italia"/>
+</personas>

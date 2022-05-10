@@ -3,12 +3,12 @@
 <channel>
     <item>
         <title>Córdoba Ciudad Patrimonio</title>
-        <link>"https://guadalupelunav.github.io/lm1/cp/unidad1/cordobaciudadpatrimonio/index.html"</link>
+        <link>https://guadalupelunav.github.io/lm1/cp/unidad1/cordobaciudadpatrimonio/index.html</link>
         <description>Enlace RSS a Córdoba Ciudad Patrimonio</description>
     </item>
     <item>
         <title>Las Recetas de la abuela</title>
-        <link>"https://guadalupelunav.github.io/lm1/cp/unidad1/lasrecetasdelaabuela/lasrecetasdelaabuela.html"</link>
+        <link>https://guadalupelunav.github.io/lm1/cp/unidad1/lasrecetasdelaabuela/lasrecetasdelaabuela.html</link>
         <description>Enlace RSS a Las recetas de la abuela</description>
     </item> 
 </channel>

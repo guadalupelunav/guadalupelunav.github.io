@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="presentacion.xsl"?>
+<curriculum>
+    <datos>
+        <nombre>Guadalupe</nombre>
+        <apellidos>Luna Velázquez</apellidos>
+        <email>a21luvegu@iesgrancapitan.org</email>
+        <foto><img src="img.jpg"/></foto>
+    </datos>
+    <rrss>
+        <red>
+            <nombre>LinkedIn</nombre>
+            <enlace>https://es.linkedin.com</enlace>
+            <logo>linkedin.jpg</logo>
+        </red>
+        <red>
+            <nombre>Twitter</nombre>
+            <enlace>https://twitter.com</enlace>
+            <logo>twitter.jpg</logo>
+        </red>
+    </rrss>
+    <formacion>
+        <superior>Bachillerato</superior>
+        <superior>CFGS ASIR</superior>
+    </formacion>
+    <idiomas>
+        <ingles>
+            <oral>B2</oral>
+            <escritura>C1</escritura>
+            <comprension>C1</comprension>
+        </ingles>
+        <alemán>
+            <oral>B2</oral>
+            <escritura>C1</escritura>
+            <comprension>C1</comprension>
+        </alemán>
+    </idiomas>
+    <experiencia>
+        <trabajo fechainicio="02/04/2016" fechafinal="23/10/2017">Delantero del Barça</trabajo>
+        <trabajo fechainicio="02/04/2018" fechafinal="23/10/2019">Portero de Real Madrid</trabajo>
+    </experiencia>
+</curriculum>

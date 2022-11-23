@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/icono.png">
+        <title>Guadalupe Luna Velázquez</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-areas: "header header header"
+                                    "article article aside"
+                                    "article article aside"
+                                    "footer footer footer";
+                grid-template-rows: 10vw 37vw;
+                grid-template-columns: 80vw 5fr 20vw;
+                grid-gap: 0.5vw;
+                height: 100%;
+                margin: 0;
+                text-align: left;
+            }
+            header {
+                background-color: powderblue;
+                color: aliceblue;
+                text-align: center;
+            }
+            article {
+            padding: 5vw;
+            background: -webkit-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7); 
+            background: -o-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7); 
+            background: -moz-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+            background: linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+            background-color:(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+        }
+            aside {
+                background-color: powderblue;
+                text-align: center;
+                padding-top: 2vw;
+            }
+            footer {
+                background-color: powderblue;
+                text-align: center;
+                color: white;
+                font-size: 1.5vw;
+            }
+            #header {
+                grid-area: header;
+            }
+            #article {
+                grid-area: article;
+            }
+            #aside {
+                grid-area: aside;
+            }
+            #footer {
+                grid-area: footer;
+            }
+            a {
+                padding: 0.25vw;
+                margin: 5px;
+                font-size: 2vw;
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                padding: 0.5vw;
+                transition: all 0.3s ease;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+            }
+            li {
+                text-align: center;
+                display: inline-block;
+                border: 1px solid white;
+                background-color: powderblue;
+                margin: 10px;
+                font-size: 5px;
+                padding: 0.5vw;
+            }
+            .imagen {
+                margin: 10px;
+                height: 8vw;
+            }
+            @font-face {
+                font-family:fuente;
+                src: url(fuentes/Sail.ttf);
+            }
+            h1 {
+                font-family: fuente;
+                font-size: 4vw;
+            }
+            li.dos {
+                transform: translate(90px, 0px)
+            }
+            li.tres {
+                transform: translate(230px, 0px)
+            }
+            li.cuatro {
+                transform: translate(210px, 0px)
+            }
+            h2 {
+                text-align: center;
+                color: #96c1d8fe;
+                border: double 5px;
+                padding: 0.5vw;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img class="imagen" class="golw" src="images/icono.png" align="left">
+            <h1>Lenguaje de Marcas</h1>
+        </header>
+        <article id="article">
+            <h2>Unidad 1: HTML</h2>
+            <br><br>
+            <ul>
+                <li><h3><a href="unidad1/bloque 1.html">Bloque 1: Estructura y contenido</a></h3></li>
+                <li class="dos"><h3><a href="unidad1/bloque 5.html">Bloque 5: Tablas</a></h3></li><br>
+                <li><h3><a href="unidad1/bloque 2.html">Bloque 2: Enlaces</a></h3></li>
+                <li class="tres"><h3><a href="unidad1/bloque 6.html">Bloque 6: Vídeos y audios</a></h3></li><br>
+                <li><h3><a href="unidad1/bloque 3.html">Bloque 3: Imágenes</a></h3></li>
+                <li class="cuatro"><h3><a href="unidad1/bloque 7.html">Bloque 7: Formularios</a></h3></li><br>
+                <li><h3><a href="unidad1/bloque 4.html">Bloque 4: Listas</a></h3></li>
+            </ul>
+            
+               
+        </article>
+        <aside id="aside">
+            <div style="text-align:center;padding:1em 0;"><b><br/>Córdoba, España</b></a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FMadrid" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+        </aside>
+        <footer id="footer"><h5>Lenguaje de marcas I.E.S. Gran Capitán <br> Guadalupe Luna Velázquez</br> Córdoba, España. 2022</h5></div>
+    
+    </body>
+</html>

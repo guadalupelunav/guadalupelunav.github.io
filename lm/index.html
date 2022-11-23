@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/icono.png">
+        <title>Guadalupe Luna Velázquez</title>
+        <link rel="alternate" type="application/rss+xml" title="Guadalupe Luna - HTML" href="/rss1.rss"/>
+        <link rel="alternate" type="application/atom+xml" title="Guadalupe Luna - XML" href="/atom.atom" />
+        <style>
+            body {
+                display: grid;
+                grid-template-areas: "header header header"
+                                    "article article aside"
+                                    "article article aside"
+                                    "footer footer footer";
+                grid-template-rows: 10vw 37vw;
+                grid-template-columns: 80vw 5fr 20vw;
+                grid-gap: 0.5vw;
+                height: 100%;
+                margin: 0;
+            }
+            header {
+                background-color: powderblue;
+                color: aliceblue;
+                text-align: center;
+            }
+            article {
+                padding: 5vw;
+                background: -webkit-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7); 
+                background: -o-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7); 
+                background: -moz-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+                background: linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+                background-color:(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+            }
+            aside {
+                background-color: powderblue;
+                text-align: center;
+                padding-top: 2vw;
+            }
+            footer {
+                background-color: powderblue;
+                text-align: center;
+                color: aliceblue;
+                font-size: 1.5vw;
+            }
+            #header {
+                grid-area: header;
+            }
+            #article {
+                grid-area: article;
+            }
+            #aside {
+                grid-area: aside;
+            }
+            #footer {
+                grid-area: footer;
+            }
+            a {
+                padding: 0.25vw;
+                margin: 5px;
+                font-size: 2vw;
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                padding: 0.5vw;
+                transition: all 0.3s ease;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                text-align: left;
+            }
+            li {
+                text-align: center;
+                display: inline-block;
+                border: 1px solid whitesmoke;
+                background-color: powderblue;
+                margin: 10px;
+                font-size: 5px;
+                padding: 0.5vw;
+            }
+            .imagen {
+                margin: 10px;
+                height: 8vw;
+            }
+            @font-face {
+                font-family:fuente;
+                src: url(fuentes/Sail.ttf);
+            }
+            h1 {
+                font-family: fuente;
+                font-size: 4vw;
+            }
+            h3.deco {
+                color: cornflowerblue;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img class="imagen" class="golw" src="images/icono.png" align="left">
+            <h1>Lenguaje de Marcas</h1>
+        </header>
+        <article id="article">
+            <h3 class="deco">Unidades</h3>
+            <ul>
+                <li><h3><a href="unidades/unidad 1.html">Unidad 1: HTML</a></h3></li>
+                <li><h3><a href="unidades/unidad 2.html">Unidad 2: CSS</a></h3></li>
+                <li><h3><a href="unidades/unidad 3.html">Unidad 3: CSS3</a></h3></li>
+            </ul>
+            <h3 class="deco">Proyectos</h3>
+            <ul>
+                <li><h3><a href="proyectos/cordobaciudadpatrimonio/index.html">Córdoba Ciudad Patrimonio</a></h3></li>
+                <li><h3><a href="proyectos/lasrecetasdelaabuela/lasrecetasdelaabuela.html">Las recetas de la abuela</a></h3></li>
+            </ul>    
+        </article>
+        <aside id="aside">
+            <a href="rss.rss"><img src="images/Rss.png" height="30px"></a>
+            <a href="atom.atom"><img src="images/atom.png" height="30px"></a>
+        </aside>
+        <footer id="footer"><h5>Lenguaje de marcas I.E.S. Gran Capitán <br> Guadalupe Luna Velázquez</br> Córdoba, España. 2022</h5></div>
+    
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Turismo de Córdoba</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/icono.png">
+        <style>
+            .titulo {
+                font-family: cordoba;
+                font-size: 50px;
+                text-align: center;
+            }
+            @font-face {
+                font-family:cordoba;
+                src: url(Fuentes/Sail.ttf);
+            }
+             ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            li {
+                display: inline-block;
+                border: 1px solid black;
+                padding: 5px;
+                background-color: wheat;
+            }   
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            #animate li a {
+                cursor: pointer;
+                transition: padding 250ms ease-in-out;
+            }
+            #animate li a:hover {
+                padding-left: 10px;
+                padding-right: 10px;
+                text-shadow: 0 0 12px white, 0 0 12px white, 0 0 12px white;
+                padding: 10px;
+                transition: all 0.3s ease;
+            }
+            footer {
+                text-align: center;
+                background-color: burlywood;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="top" class="titulo">Córdoba Ciudad Patrimonio</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul id="animate" type="a">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mezquita.html">La Mezquita</a></li>
+                <li><a href="cascohistorico.html">Casco Histórico</a></li>
+                <li><a href="lospatios.html">Los Patios</a></li>
+                <li><a href="medinaazahara.html">Medina Azahara</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <p><b>Contacto:</b></p>
+        <p>&emsp;<u>- Correo electrónico: a21luvegu@iesgrancapitan.org</u></p>
+        <p>&emsp;&emsp;<a href="mailto:a21luvegu@iesgrancapitan.org">Contactar por correo electrónico</a></p>
+        <p>&emsp;<u>- Teléfono:</u></p>
+        <p>&emsp;&emsp;<a href="tel:27314869">Llamar por teléfono</a></p>
+        <a href="#top"><img src="images/boton.png" height="75">
+
+            <footer>
+                <h6><br>Lenguaje de marcas I.E.S. Gran Capitán <br> ©: Guadalupe Luna Velázquez, Todos los derechos reservados </br> Córdoba, España. 2021</h6>
+                </br>
+            </footer>
+    </body>
+</html>

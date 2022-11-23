@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icono.png">
+        <title>Guadalupe Luna Velázquez</title>
+        <style>
+            #main {
+                display: flex;
+                min-height: calc(100vh - 30vh);
+            }
+            header, footer {
+                background-color: grey;
+                height: 15vh;
+            }
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            #main > article {
+                flex: 1;
+            }
+            #main > nav,
+            #main > aside {
+                flex: 0 0 20vw;
+                background: beige;
+            }
+            #main > nav {
+                order: -1;
+            }
+            body {
+                margin: 0px;
+            }
+            header, footer {
+                background: grey;
+                height: 15vw;
+            }
+            header, footer, article, nav, aside {
+                padding: 1em;
+            }
+            h2 {
+                text-align: center;
+                color: #96c1d8fe;
+                border: double 5px;
+                padding: 0.5vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Ejercicio 6</h2>
+        <header>Encabezado</header>
+        <div id="main">
+            <article> Articulo <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, modi impedit cum dolorem quas error similique cumque sapiente, exercitationem, enim quasi consequuntur consequatur aliquid magnam in eius placeat facilis velit?</article>
+            <nav>Nav</nav>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </body>
+</html>

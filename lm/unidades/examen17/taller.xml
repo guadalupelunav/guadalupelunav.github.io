@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taller [
+<!ELEMENT taller (clientetaller+)>
+          <!ELEMENT clientetaller (cliente,nif,email,factura,fecha,pedido+)>
+          <!ELEMENT cliente (#PCDATA)>
+          <!ELEMENT nif (#PCDATA)>
+          <!ELEMENT email EMPTY>
+          <!ELEMENT factura (#PCDATA)>
+          <!ELEMENT fecha (#PCDATA)>
+          <!ELEMENT pedido (producto+)>
+          <!ELEMENT producto (descripcion,cantidad,precio,descuento,importe,total_factura)>
+          <!ATTLIST producto referencia ID #REQUIRED>
+          <!ELEMENT descripcion (#PCDATA)>
+          <!ELEMENT cantidad (#PCDATA)>
+          <!ELEMENT precio (#PCDATA)>
+          <!ELEMENT descuento (#PCDATA)>
+          <!ELEMENT importe (#PCDATA)>
+          <!ATTLIST importe iva ID 21% #REQUIRED>
+          <!ELEMENT total_factura (#PCDATA)>
+          
+]>
+
+<taller>
+    <clientetaller>
+        <cliente>Adrián Calero</cliente>
+        <nif>27314869G</nif>
+        <email></email>
+        <factura>34982560-F</factura>
+        <fecha>19/03/17</fecha>
+        <pedido>
+            <producto referencia="R294825">
+                <descripcion>Cambio de aceite</descripcion>
+                <cantidad>1</cantidad>
+                <precio>55.86</precio>
+                <descuento>5.00%</descuento>
+                <importe iva="21%">53.07</importe>
+                <total_factura>53.07</total_factura>
+            </producto>
+        </pedido>
+    </clientetaller>
+</taller>

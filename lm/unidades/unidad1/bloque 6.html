@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/iconopng.png">
+        <title>Guadalupe Luna Velázquez</title>
+        <link rel="alternate" type="application/rss+xml" title="Guadalupe Luna - HTML" href="/rss1.rss"/>
+        <link rel="alternate" type="application/atom+xml" title="Guadalupe Luna - XML" href="/atom.atom" />
+        <style>
+            body {
+                display: grid;
+                grid-template-areas: "header header header"
+                                    "article article aside"
+                                    "article article aside"
+                                    "footer footer footer";
+                grid-template-rows: 10vw 37vw;
+                grid-template-columns: 80vw 5fr 20vw;
+                grid-gap: 0.5vw;
+                height: 100%;
+                margin: 0;
+                text-align: left;
+            }
+            header {
+                background-color: powderblue;
+                color: aliceblue;
+                text-align: center;
+            }
+            article {
+            padding: 4vw;
+            background: -webkit-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7); 
+            background: -o-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7); 
+            background: -moz-linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+            background: linear-gradient(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+            background-color:(#ecfdff, #f4e8ffc7, #fff9f1c7, #ecfdff, #f4e8ffc7);
+            }
+            aside {
+                background-color: powderblue;
+                text-align: center;
+                padding-top: 2vw;
+            }
+            footer {
+                background-color: powderblue;
+                text-align: center;
+                color: white;
+                font-size: 1.5vw;
+            }
+            #header {
+                grid-area: header;
+            }
+            #article {
+                grid-area: article;
+            }
+            #aside {
+                grid-area: aside;
+            }
+            #footer {
+                grid-area: footer;
+            }
+            a {
+                padding: 0.25vw;
+                margin: 5px;
+                font-size: 2vw;
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                padding: 0.5vw;
+                transition: all 0.3s ease;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0px;
+            }
+            li {
+                text-align: center;
+                display: inline-block;
+                border: 1px solid white;
+                background-color: powderblue;
+                margin: 14px;
+                font-size: 5px;
+                padding: 0.5vw;
+            }
+            .imagen {
+                margin: 10px;
+                height: 8vw;
+            }
+            @font-face {
+                font-family:fuente;
+                src: url(fuentes/Sail.ttf);
+            }
+            h1 {
+                font-family: fuente;
+                font-size: 4vw;
+            }
+            h2 {
+                text-align: center;
+                color: #96c1d8fe;
+                border: double 5px;
+                padding: 0.5vw;
+            }
+            source {
+                height: 10vw;
+            }
+        </style>
+    <body>
+        <header id="header">
+            <img class="imagen" class="golw" src="images/icono.png" align="left">
+            <h1>Lenguaje de Marcas</h1>
+        </header>
+        <article id="article">
+            <h2>Bloque 6: Audio y vídeo</h2>
+            <br><br>
+            <center>
+            <video controls>
+                <source src="bloque6/videohtml.mp4" type="video/mp4">
+                </video></center>
+        </article>
+        <aside id="aside">
+            <div style="text-align:center;padding:1em 0;"><b><br/>Córdoba, España</b></a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FMadrid" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+        </aside>
+        <footer id="footer"><h5>Lenguaje de marcas I.E.S. Gran Capitán <br> Guadalupe Luna Velázquez</br> Córdoba, España. 2022</h5></div>
+    </body>
+</html>

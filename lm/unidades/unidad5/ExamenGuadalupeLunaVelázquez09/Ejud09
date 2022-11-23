@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ej_ud09.xsl"?>
+<informatica>
+<cursos>
+    <curso id="asir">
+	    <horario>
+          <lunes>
+              <primera>GBD</primera>
+              <segunda>FOL</segunda>
+              <tercera>FHW</tercera>
+              <cuarta>FHW</cuarta>
+              <quinta>ISO</quinta>
+              <sexta>ISO</sexta>
+          </lunes>
+          <martes>
+          <primera>LM</primera>
+              <segunda>LM</segunda>
+              <tercera>PAR</tercera>
+              <cuarta>PAR</cuarta>
+              <quinta>GBD</quinta>
+              <sexta>GBD</sexta>
+          </martes>
+          <miercoles>
+          <primera>ISO</primera>
+              <segunda>ISO</segunda>
+              <tercera>PAR</tercera>
+              <cuarta>PAR</cuarta>
+              <quinta>FOL</quinta>
+              <sexta>FOL</sexta>
+          </miercoles>
+          <jueves>
+          <primera>GBD</primera>
+              <segunda>GBD</segunda>
+              <tercera>LM</tercera>
+              <cuarta>LM</cuarta>
+              <quinta>FHW</quinta>
+              <sexta>FOL</sexta>
+          </jueves>
+          <viernes>
+          <primera>ISO</primera>
+              <segunda>ISO</segunda>
+              <tercera>PAR</tercera>
+              <cuarta>PAR</cuarta>
+              <quinta>GBD</quinta>
+              <sexta>GBD</sexta>
+          </viernes>
+		</horario>
+	</curso>
+	 <curso id="daw">
+	    <horario>
+          <lunes>
+              <primera>FHW</primera>
+              <segunda>GBD</segunda>
+              <tercera>GBD</tercera>
+              <cuarta>ISO</cuarta>
+              <quinta>ISO</quinta>
+              <sexta>FOL</sexta>
+          </lunes>
+          <martes>
+          <primera>PAR</primera>
+              <segunda>PAR</segunda>
+              <tercera>FOL</tercera>
+              <cuarta>GBD</cuarta>
+              <quinta>GBD</quinta>
+              <sexta>FHW</sexta>
+          </martes>
+          <miercoles>
+          <primera>LM</primera>
+              <segunda>LM</segunda>
+              <tercera>ISO</tercera>
+              <cuarta>ISO</cuarta>
+              <quinta>PAR</quinta>
+              <sexta>PAR</sexta>
+          </miercoles>
+          <jueves>
+          <primera>GBD</primera>
+              <segunda>FOL</segunda>
+              <tercera>FOL</tercera>
+              <cuarta>FHW</cuarta>
+              <quinta>LM</quinta>
+              <sexta>LM</sexta>
+          </jueves>
+          <viernes>
+          <primera>GBD</primera>
+              <segunda>GBD</segunda>
+              <tercera>PAR</tercera>
+              <cuarta>PAR</cuarta>
+              <quinta>FOL</quinta>
+              <sexta>ISO</sexta>
+          </viernes>
+		</horario>
+	</curso>
+</cursos>
+</informatica>

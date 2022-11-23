@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Guadalupe Luna Velázquez</title>
+        <link rel="shortcut icon" href="images/icono.png">
+        <style>
+            h2 {
+                text-align: center;
+                color: #96c1d8fe;
+                border: double 5px;
+                padding: 0.5vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Formulario clase</h2>
+        <section>
+            <form name="Ejemplo formulario" method="get" action="procesa.php">
+                <p><label>Nombre<input type="text"/></label></p>
+                <p><label>Edad<input type="text"/></label></p>
+                <p><input type="submit" value="Enviar"/><label></p>
+            </form>
+        </section>
+        <section>
+            <h1>Formulario 2</h1>
+            <form name="Ejemplo formulario 2" method="get" action="procesa.php">
+            <p><label for="Listado"></label></p>
+            <select name="nacionalidad" id="listado">
+                <option value="1">Española</option>
+                <option value="2">Francesa</option>
+                <option value="3">Inglesa</option>
+                <option value="4">Italiana</option>
+                <p><input type="submit" value="Enviar"></p>
+            </select>
+            </form>
+        </section>
+    </body>
+</html>
